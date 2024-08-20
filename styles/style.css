@@ -1,0 +1,12 @@
+.Container {
+  background-color: brown;
+  display: flex;
+  flex-wrap: wrap; /* wrap into multiple lines if they don't fit in one line*/
+  width: 100%;
+}
+.grid-item {
+    background-color: rgb(14, 14, 184);
+    width: calc(100%/16);
+    height: calc(100%/16);
+    border: 1px solid yellow;
+}
