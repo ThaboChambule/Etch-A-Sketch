@@ -16,10 +16,21 @@ function getGrid(num) {
 
   gridItems.forEach((item) => {
     item.addEventListener("mouseover", () => {
-      item.style.backgroundColor = "yellow"; //changes background colour
+      item.style.backgroundColor = getRandomColor(); //changes background colour
     });
   });
 }
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
 const button = document.querySelector(".button");
 button.addEventListener("click", () => {
   let userInput = prompt("Please enter the number of squares per side"); //gets user input
