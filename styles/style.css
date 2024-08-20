@@ -4,11 +4,16 @@
   width: 100%;
 }
 .grid-item {
-  width: calc(100% / 16);
+  width: calc(100%/16);
+  height: calc(100%/16);
   padding-top: calc(100% / 16);
   background-color: rgb(0, 0, 0);
   border: 1px solid blue;
 }
 .header{
     text-align: center;
+}
+.button {
+    margin-bottom: 15px;
+    border-color: blue;
 }
